@@ -10,3 +10,5 @@ Feature: Abhibus Ticket Booking
     When I select a random traveller and seat from departure
     And I select a random traveller and seat during return
     And click on proceed to payment button
+    And checkout the Abhibuslogo and tooltip massage
+    
