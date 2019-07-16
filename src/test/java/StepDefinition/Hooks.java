@@ -20,7 +20,7 @@ public class Hooks{
      */
     public void openBrowser() {
         System.out.println("Called openBrowser");
-        System. setProperty("webdriver.chrome.driver", "/Users/nisum/Documents/drivers/chromedriver");
+        System. setProperty("webdriver.chrome.driver", "/Users/kumkiyan/Documents/drivers/chromedriver");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().deleteAllCookies();
