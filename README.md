@@ -6,25 +6,28 @@ Selenium:
 Selenium interview Questions.
 
 1. Difference between webdriver get and navigate methods:
-		Get method will wait till the all the components of the page are loaded. Then only resumes / unlock the scripts and next line will execute.
-		Navigate method will not check whether page loaded or not after execution. The control goes to the next line.
-		back, forward, and refresh methods we have along with navigate methods.
+
+Get method will wait till the all the components of the page are loaded. Then only resumes / unlock the scripts and next line will execute.
+Navigate method will not check whether page loaded or not after execution. The control goes to the next line. back, forward, and refresh methods we have along with navigate methods.
 	
 2. Difference between quit and close:
-		close only browser that is under focus.
-		quit will close all the browsers will be closed. 
+
+close only browser that is under focus.
+quit will close all the browsers. 
 
 3. what is the implicit wait
-		Begining of the test we set default wait time. before it throw element not found exception.
-		scripts resumes once the element is displayed.
-		Applicable for all the elements. 
-		dirver.manage().TimeOut().implicitWait(TimeUnit.seconds,5)
+		
+Begining of the test we set default wait time. 
+scripts resumes once the element is displayed with in the specified time.
+If element not found within the specified time, it will throw elementnotfound exception.
+Applicable for all the elements.
+dirver.manage().TimeOut().implicitWait(TimeUnit.seconds,5)
 	
+
 4. What is the explicit Wait
-		Assume that we have element which takes to much time to load. example WebTable.
-		It targes only specific element. then default time (implicit wait will applicable for remaining elements)
-		in explicit wait we specify a explict condition of target element, if that condition is true in the given time, then only it goes to remaining logic.
-		visibilityOfElementLocated, elementToBeClickable, elementToBeSelected
+
+It targes only specific element set by the user. Assume that we have element which takes to much time to load. example WebTable. In explicit wait we specify a explict condition of target element, if that condition is true in the given time, then only it goes to remaining logic. conditions : visibilityOfElementLocated, elementToBeClickable, elementToBeSelected
+Then default time (implicit wait will applicable) for remaining elements.
 
 5. dirver.switchTo(id) <- id, name, frame element.
 
