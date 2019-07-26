@@ -69,6 +69,9 @@
         //tagName[contains(@class,'uo')]
         //tagName[contains(text(),'SAP')]
         //tagName[text()='Hero']
+        //tagName[@name="login" OR @value="submit"]
+        //tagName[@name="login" AND @value="submit"]
+        
 
         regular expression in the CSS?
         tagname[class*='uo']
@@ -77,6 +80,7 @@
         //xpath/following-sibling::tagName
         //xpath/parent::tagName or xpath
         //xpath/ancestor::tagName or xpath
+        //xpath/child::tagName or xpath
 
         Dropdown Selection 
         
