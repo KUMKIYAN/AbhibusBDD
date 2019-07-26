@@ -47,6 +47,8 @@
         visibilityOfElementLocated()
 
         dirver.switchTo(id) <- id, name, frame element.
+        
+        driver.switchTo().defaultContent()
 
         How you handle 3rd child window
         webdriver by defaults on first window even we open 2 to 3 browsers using selenium.
