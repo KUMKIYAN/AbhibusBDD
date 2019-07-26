@@ -17,14 +17,34 @@
         What is the explicit Wait
         It targes only specific element set by the user.
         Assume that we have element which takes to much time to load. example WebTable.
-        In explicit wait we specify a explict condition of target element,
+        In explicit wait we specify a explict condition of target element and time,
         if that condition is true in the given time, then only it goes to remaining logic.
 
-        conditions : visibilityOfElementLocated, elementToBeClickable, elementToBeSelected Then default time (implicit wait will applicable) for remaining elements.
+        conditions : visibilityOfElementLocated, elementToBeClickable, elementToBeSelected 
+        Then default time (implicit wait will applicable) for remaining elements.
 
         WebDriverWait wait=new WebDriverWait(driver, 20);
         WebElement seleniumlink; seleniumlink= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath( "//div/div/a/i")));
         seleniumlink.click();
+        
+        alertIsPresent()
+        elementSelectionStateToBe()
+        elementToBeClickable()
+        elementToBeSelected()
+        frameToBeAvaliableAndSwitchToIt()
+        invisibilityOfTheElementLocated()
+        invisibilityOfElementWithText()
+        presenceOfAllElementsLocatedBy()
+        presenceOfElementLocated()
+        textToBePresentInElement()
+        textToBePresentInElementLocated()
+        textToBePresentInElementValue()
+        titleIs()
+        titleContains()
+        visibilityOf()
+        visibilityOfAllElements()
+        visibilityOfAllElementsLocatedBy()
+        visibilityOfElementLocated()
 
         dirver.switchTo(id) <- id, name, frame element.
 
