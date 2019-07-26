@@ -88,11 +88,10 @@ Then default time (implicit wait will applicable) for remaining elements.
 		
 15 Importanace of desired capabilities?
 		
-		to set the testconfiguration with key value pair 	
-
-		We set properties and behaviour in desired capabilities ?
+		to set the test configuration with key value pair 	
+		We set properties and behaviour in desired capabilities.
 		how browser react ? 
-	    we also set operating systems. when we are working in grid
+	        we also set operating systems. when we are working in grid
 
 			WebDriver driver;
 			String baseUrl , nodeUrl;
