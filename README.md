@@ -12,7 +12,7 @@ Navigate method will not check whether page loaded or not after execution. The c
 	
 2. Difference between quit and close:
 
-close only browser that is under focus.
+close method will close only browser that is under focus.
 quit will close all the browsers. 
 
 3. what is the implicit wait
@@ -28,6 +28,11 @@ dirver.manage().TimeOut().implicitWait(TimeUnit.seconds,5)
 
 It targes only specific element set by the user. Assume that we have element which takes to much time to load. example WebTable. In explicit wait we specify a explict condition of target element, if that condition is true in the given time, then only it goes to remaining logic. conditions : visibilityOfElementLocated, elementToBeClickable, elementToBeSelected
 Then default time (implicit wait will applicable) for remaining elements.
+
+WebDriverWait wait=new WebDriverWait(driver, 20);
+WebElement seleniumlink;
+seleniumlink= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath( "//div/div/a/i")));
+seleniumlink.click();
 
 5. dirver.switchTo(id) <- id, name, frame element.
 
