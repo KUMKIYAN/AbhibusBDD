@@ -225,3 +225,7 @@ Selenium Questions.
         WebElement we = driver.findElement(By.cssSelector("#valid"));
         // you do something which alters the page or a javascript event alters the page
         we.click();
+        
+        How to check whether page load completely or not ?
+        
+        while(!((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete"));
