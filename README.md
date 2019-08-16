@@ -227,5 +227,4 @@ Selenium Questions.
         we.click();
         
         How to check whether page load completely or not ?
-        
         while(!((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete"));
